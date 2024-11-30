@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Ojuju';
+  src: url('../fonts/ojuju-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ojuju';
+  src: url('../fonts/ojuju-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.maincolumn {
+  flex: 3;
+  background-color: #ffcfdd;
+}
+
+.mainleftcolumn {
+  flex: 1;
+  background-color: #ffcfdd;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+}
+.mainleftcolumn ul {
+  background-color: #ffe3eb;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+.maincontent {
+}
+
+.helloblock {
+  text-align: center;
+  color: #4f3d4e;
+  font-family: Arial, sans-serif;
+  background-color: #ffe3eb;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+}
+
+.helloblock h2 {
+	font-weight: 600;
+}
+.abtme {
+  text-align: center;
+  color: #4f3d4e;
+  font-family: Arial, sans-serif;
+  background-color: #ffe3eb;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+}
+
+.abtme ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: circle inside;
+}
+
+.abtme ul li {
+  text-align: left; 
+}
+
+.gllr {
+  background-color: #ffe3eb;
+  border: 1px solid #f0f0f0;  
+  padding: 20px;
+  margin: 20px;
+}
+
+.gllrph {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.gllrph article {
+  flex: 1 1 calc(33.33% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  text-align: center; /* Центрируем содержимое */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#head {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#hatt {	
+  color: #C71585;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Ojuju', sans-serif;
+  font-weight: 700;	
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h3 {
+  text-align: center;
+  color: #4f3d4e;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  color: #4f3d4e;
+  font-size: 16px;
+  
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #maincolumn, .mainleftcolumn {
+    flex: none;
+    max-width: 100%;
+  }
+  
+  .maincolumn article {
+    flex: 1 1 100%;
+  }
+  
+}
